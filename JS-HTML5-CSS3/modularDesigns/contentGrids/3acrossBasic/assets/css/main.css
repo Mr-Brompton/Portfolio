@@ -1,0 +1,20 @@
+.contentGrid {
+	width: 100%;
+	height: auto;
+	background: black;
+	text-align: center;
+}
+
+.contentItem {
+	text-align: center;
+	width: 30%;
+	display: inline-block;
+}
+
+@media only screen and (max-width: 916px) {
+	.contentItem {
+		width: 100%;
+		display: block;
+	}
+}
+

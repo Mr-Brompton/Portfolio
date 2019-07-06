@@ -1,0 +1,42 @@
+/*Global*/
+body {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	background-color: #171d22;
+}
+/*end Global*/
+
+/* jumbotron style*/
+.jumboTron {
+	position: relative;
+	width: 100%;
+	min-height: 30em;
+	height: auto;
+	display: block;
+	background: url('../img/bg.jpg');
+	background-size: cover;
+	padding-bottom: 0.5em;
+}
+.tronTitle {
+	
+}
+.tronTitle h1 {
+	color: white;
+	font-size: 3em;
+	display: none;
+}
+.tronTitle h2 {
+	color: white;
+	font-size: 3em;
+	padding: 0.5em;
+}
+.tronText {
+	width: 50%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 1em;
+	margin: 0 0 0 1em;
+}
+.tronText p {
+	color: white;
+}
+
+/*end jumbotron style*/

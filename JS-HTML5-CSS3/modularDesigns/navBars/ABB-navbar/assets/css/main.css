@@ -1,0 +1,62 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Lato|Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+
+
+/*Nav Style*/
+/*nav*/
+nav {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #666;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3%;
+  z-index: 1000; }
+
+nav a {
+  text-decoration: none;
+  padding: 0 5%; }
+
+nav a:hover {
+  color: #666; }
+
+nav .navLink {
+  font-size: 1.5em;
+  color: #666; }
+
+nav .mainNav {
+  font-weight: bold;
+  color: darkOrange;
+  font-size: 2em; }
+
+nav .navLink:hover {
+  color: darkOrange; }
+
+nav .mainNav:hover {
+  font-weight: bold;
+  color: #666;
+  font-size: 2em; }
+
+.navClear {
+  height: 0;
+  width: 100%;
+  padding: 2em; }
+  
+  /*mobile*/
+@media only screen and (max-width: 768px) {
+  /*nav*/
+  nav {
+    text-align: center; 
+  }
+
+  nav .mainNav {
+    padding-right: 4em; 
+  }
+
+  .mobHide {
+    display: none; 
+  }
+}
+/*end Nav Style*/
