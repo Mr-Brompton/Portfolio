@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Roboto+Mono|Ubuntu|VT323');
+/*
+
+Para
+    font-family: 'Ubuntu', sans-serif;
+Sub
+    font-family: 'Roboto Mono', monospace;
+Main
+    font-family: 'Orbitron', sans-serif;
+Game Title
+    font-family: 'VT323', monospace;
+
+
+*/
+/**GLOBAL STYLES
+*
+*/
+body {
+    background-image: url(/assets/img/Background-binary.png) no-repeat;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+html {
+  min-height:100%;
+  background:linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/assets/img/Background-binary.png);
+  background-size:cover;
+  }
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    white-space: 0;
+}
+a {
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    font-weight:300;
+    color:#FFFFFF;
+}
+.button {
+    width: 25%;
+    font-size: 2em;
+    display:inline-block;
+   padding:5em;
+    border:0.1em solid #FFFFFF;
+   border-radius:0.12em;
+   box-sizing: border-box;
+    text-align:center;
+   transition: all 0.2s;   
+}
+.button:hover {
+    color:rgba(0,0,0,1);
+    background-color:#FFFFFF;
+}
+
+/** Start Page Animations
+*
+*/
+#game-title {
+    font-family: 'VT323', monospace;
+    font-size: 7.5em;
+    //display: none;
+}
+#welcome {
+    margin-top: 10%;
+    font-size: 1.5em;
+    //display: none;
+}
+#game-author {
+    margin-top: 1em;
+    font-size: 2em;
+    //display:none;
+}
+
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 600px;
+}
+#animate {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+}
+#startIntro {
+    margin: 1em;
+    opacity: 1;
+    -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 8s; /* Firefox < 16 */
+        -ms-animation: fadein 8s; /* Internet Explorer */
+         -o-animation: fadein 8s; /* Opera < 12.1 */
+            animation: fadein 8s;
+}
+
+@keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/**General Animations
+*Bouncy
+*/
+
+.bouncy{
+ animation:bouncy 5s infinite linear;
+ position:relative;
+}
+@keyframes bouncy {
+ 0%{top:0em}
+ 40%{top:0em}
+ 43%{top:-0.9em}
+ 46%{top:0em}
+ 48%{top:-0.4em}
+ 50%{top:0em}
+ 100%{top:0em;}
+} 
